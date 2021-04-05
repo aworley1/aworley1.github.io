@@ -25,7 +25,7 @@ Character encoding
 ## A simple example: ASCII
 
 The original ASCII code page was developed in the 1960s and was based on 128 code points. 0-31 were reserved as control characters for devices (e.g. printers) and 32-127 were
-the printable characters: upper and lower case letters, numbers and a few common special characters.
+the printable characters: Upper and lower case letters, numbers and a few common special characters.
 
 The character encoding can be simple - converting the decimal number to binary directly can encode all values with 7 bits per character. When dealing with 8 bit bytes, this can
 simply be padded with a leading zero.
@@ -45,7 +45,7 @@ was being used to decode the data, and a single code page may not have all the r
 ## Unicode and UTF-8
 
 Unicode is a standard that attempts to solve the previously mentioned problems, providing a code page large enough to cover the scripts of all of the world languages,
-and character encodings to support this.
+(currently over 140,000 characters) and character encodings to support this.
 
 ### UTF-8
 UTF-8 is the most popular of the Unicode character encodings. It has a number of advantages over the other variants:
@@ -103,4 +103,4 @@ and prepend the relevant codes to these to create the three bytes:
 #### An implementation in Kotlin
 
 I've written a (not production ready) implementation of the encoding algorithm in Kotlin for learning purposes. You can see the code at:
-https://github.com/aworley1/utf8-encoder/blob/master/src/main/kotlin/Utf8Encoder.kt
+[https://github.com/aworley1/utf8-encoder/blob/master/src/main/kotlin/Utf8Encoder.kt](https://github.com/aworley1/utf8-encoder/blob/master/src/main/kotlin/Utf8Encoder.kt)
